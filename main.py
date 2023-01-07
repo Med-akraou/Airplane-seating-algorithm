@@ -1,6 +1,5 @@
 
-seats = [[2,3],[3,3],[3,2]]
-
+seats = [[3 , 4],[4 , 5],[2 , 3],[3 , 4]]
 def init_seats(seats):
     #fill all seats with 0 as default value
     seating = []
@@ -89,9 +88,10 @@ def display(sets_grid):
             print()
         print("\n")
 
-next_passenger = fill_aisle_seats(20)
-next_passenger = fill_window_seats(20,next_passenger)
-fill_center_seats(20,next_passenger)
+num_passenger = 39
+next_passenger = fill_aisle_seats(num_passenger)
+next_passenger = fill_window_seats(num_passenger,next_passenger)
+fill_center_seats(num_passenger,next_passenger)
 display(sets_grid)
             
 
